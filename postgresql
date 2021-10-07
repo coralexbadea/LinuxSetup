@@ -1,0 +1,19 @@
+# from https://www.postgresql.org/download/linux/debian/
+
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+sudo apt-get -y install postgresql
+
+
+
+#from https://unix.stackexchange.com/questions/294926/unable-to-start-posgtresql-the-reason-isnt-clear
+
+sudo mkdir /var/lib/postgres/data
+sudo chown postgres /var/lib/postgres/data
+sudo -i -u postgres
+/usr/lib/postgres/13/bin/initdb  -D '/var/lib/postgres/data'
+/usr/lib/postgresql/13/bin/pg_ctl -D /var/lib/postgres/data -l logfile start
+
+# pg admin download with pip 
+in webpage use postgres as username
