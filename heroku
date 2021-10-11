@@ -28,3 +28,12 @@ heroku run python3
 
 To check out your database, enter
 heroku pg:psql --app unique-app-name
+
+
+
+
+##Heroku angular 
+
+https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147
+
+check node version to be latest stable
