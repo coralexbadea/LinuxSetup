@@ -15,5 +15,9 @@ sudo -i -u postgres
 /usr/lib/postgres/13/bin/initdb  -D '/var/lib/postgres/data'
 /usr/lib/postgresql/13/bin/pg_ctl -D /var/lib/postgres/data -l logfile start
 
+sudo vim /var/lib/postgres/data/postgresql.conf
+
+
+
 # pg admin download with pip 
 in webpage use postgres as username
