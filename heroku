@@ -37,3 +37,7 @@ heroku pg:psql --app unique-app-name
 https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147
 
 check node version to be latest stable
+
+
+##Heroku postgresql
+heroku pg:psql --app ds2021-cornel-badea
