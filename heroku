@@ -9,6 +9,7 @@ heroku create unique-app-name # (replace `unique-app-name` with your own name). 
 heroku addons:create heroku-postgresql:hobby-dev -a unique-app-name # This creates an empty postgres database for your app. Heroku uses its own database, not your pgAdmin database.
 heroku config -a unique-app-name # The url you set earlier as the `SQLALCHEMY_DATABASE_URI` points to the database you created in pgAdmin, but since your app is now going to be using Heroku's database you need a new url. Copy the DATABASE_URL that is returned. 
 
+
 # Procfile
 web: gunicorn app:app #
 
@@ -17,6 +18,8 @@ python-3.8.5
 
 
 git init - daca nu e git deja 
+heroku git:remote -a yourapp
+
 git add .
 git commit -m "asdf"
 git push heroku master
