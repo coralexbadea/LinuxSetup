@@ -23,7 +23,7 @@ heroku git:remote -a yourapp
 git add .
 git commit -m "asdf"
 git push heroku master
-
+heroku logs --tail
 
 heroku run python3
 >>> from app import db
