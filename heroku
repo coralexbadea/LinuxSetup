@@ -44,3 +44,6 @@ check node version to be latest stable
 
 ##Heroku postgresql
 heroku pg:psql --app ds2021-cornel-badea
+\c <db_name>
+\dt
+SELECT * FROM 
