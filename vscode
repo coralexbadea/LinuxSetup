@@ -26,3 +26,5 @@ steps:
   ]
 2.
   select code for snippet -> Ctrl + Shift + P -> Generate Snippet
+3. 
+  File -> Preferences -> User Snippets
