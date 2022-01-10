@@ -1,0 +1,28 @@
+# create smart snippets
+extensions:
+  - multi-command
+  - Snippet Generator by WenfangDu
+steps:
+1.
+ Ctrl+Shift+P -> Open Keyboard Shortcuts
+ // Place your key bindings in this file to override the defaults
+  [
+      {
+          "key": "ctrl+shift+4",
+          "command":"extension.multiCommand.execute",
+          "args":{
+              "sequence":[
+                  "editor.action.clipboardCutAction",
+                  {
+                      "command": "editor.action.insertSnippet",
+                      "when": "editorTextFocus",
+                      "args": {
+                          "snippet": "${$1:${CLIPBOARD:default}}"
+                      }
+                  }
+              ]
+          }
+      }
+  ]
+2.
+  select code for snippet -> Ctrl + Shift + P -> Generate Snippet
